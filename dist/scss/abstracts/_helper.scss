@@ -1,3 +1,17 @@
 .current-menu-item {
   color: $color-primary;
 }
+
+// $sizes: 1, 2, 3, 4, 5;
+
+// @each $size in $sizes {
+//   .mb-#{$size} {
+//     margin-bottom: #{$size}rem;
+//   }
+// }
+
+// @each $size in $sizes {
+//   .mt-#{$size} {
+//     margin-top: #{$size}rem;
+//   }
+// }

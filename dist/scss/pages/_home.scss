@@ -6,80 +6,15 @@
   }
 
   &__featured {
-    // margin: 2rem 0;
-
     &__wrapper {
       margin: 3rem 0;
       border-right: 1px solid #707070;
-      //   padding-right: 5rem;
       padding: 3rem 5rem 3rem 0rem;
 
       @media only screen and (max-width: 1160px) {
         border-right: unset;
         padding: unset;
         margin: 4rem 0 0 0;
-      }
-
-      &__item {
-        &__title {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 2rem;
-          min-height: 72px;
-
-          @media only screen and (max-width: 1160px) {
-            min-height: 81px;
-          }
-
-          @media only screen and (max-width: 420px) {
-            flex-direction: column;
-            text-align: center;
-            justify-content: space-evenly;
-          }
-
-          h4 {
-            font-size: clamp(1.6rem, 5vw, 1.8rem);
-            font-family: 'poppins-bold';
-            width: 50%;
-
-            @media only screen and (max-width: 420px) {
-              width: 100%;
-            }
-
-            a {
-              color: $color-text;
-            }
-          }
-        }
-
-        p {
-          margin: 4rem 0;
-
-          min-height: 120px;
-
-          @media only screen and (max-width: 768px) {
-            margin: unset;
-            margin-bottom: 1rem;
-          }
-        }
-
-        a {
-          color: $color-primary;
-          display: inline-block;
-          //   font-size: clamp(1.4rem, 5vw, 1.6rem);
-
-          &.category {
-            color: $color-lighterblue;
-            text-transform: uppercase;
-            display: inline-flex;
-            align-items: center;
-
-            svg {
-              margin-left: 0.5rem;
-            }
-          }
-        }
       }
     }
 
@@ -92,7 +27,7 @@
         line-height: 0.1em;
         margin: 10px 0 10px;
         font-size: clamp(1.6rem, 5vw, 1.8rem);
-        font-family: 'poppins-light';
+        font-family: "poppins-light";
       }
 
       span {

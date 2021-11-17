@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'poppins-regular', sans-serif;
+  font-family: "poppins-regular", sans-serif;
   font-size: 1.4rem;
   background-color: $color-lightblue;
   color: $color-text;
@@ -39,9 +39,9 @@ body {
     padding: 0 5rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
-    @media only screen and (max-width: 850px) {
-      margin: 3rem 0;
-      padding: 0 2rem 2rem 2rem;
+    @include media-query($break-md) {
+      margin: 3rem clamp(0.6rem, 2vw, 1.5rem);
+      padding: 0 1.5rem 2rem 1.5rem;
     }
   }
 }
@@ -79,4 +79,14 @@ a {
 p {
   color: $color-text;
   line-height: 2rem;
+}
+
+.font {
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--bolder {
+    font-weight: bolder;
+  }
 }
